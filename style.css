@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Noto+Sans+Khmer:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanuman", serif;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+body{
+    padding: 10px;
+}
+.container{
+    max-width: 100%;
+    height: 200vh;
+    margin: auto;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid darkred;
+    background-color: rgba(31, 66, 238, 0.24);
+}
+.container .menu-Page{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-Page .image img{
+    width: 120px;
+    height: 120px;
+    padding: 2px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid blue;
+}
+.menu-Page menu{
+    width: 75%;
+    height: 20vh;
+}
+.menu-Page menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu-Page menu ul li{
+   margin: 15px;
+}
+.menu-Page menu ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px rgb(251, 9, 49);
+    transition: all 0.5s;
+}
+.menu-Page menu ul li a:hover{
+    font-size: 25px;
+    text-decoration: dashed;
+    color: #e01414ae;
+    text-shadow: 3px 3px rgba(45, 251, 9, 0.975);
+}
+/*responsive*/
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+    }
+    .menu-Page ul li a{
+        display: none;
+    }
+    .menu-Page .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 2px;
+    }
+    .container .main{
+        height: 48%;
+        margin-top: 10px;
+    }
+    .container .main .main-Page{
+        height: 100%;
+    }
+    .container .main .main-Page p{
+        font-size: 15px;
+    }
+    .container .mainPage{
+        margin-top: -70%;
+    }
+    .container .mainPage .cart{
+        height: 50vh;
+    }
+    .mainPage .cart p{
+        font-size: 12px;
+    }
+    .container .container1 form{
+        width: 100%;
+        height: 45vh;
+        top: 150%;
+        font-size: 10px;
+        place-items: center;
+        flex-direction: column;
+
+    }
+    .container1 form label{
+        font-size:15px;
+    }
+    .container1 form input{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .container1 button{
+        margin-top: 10px;
+    }
+    
+}
+@media only screen and (max-width:320px){
+    .container .main .main-Page p{
+        font-size: 10px;
+    }
+    .mainPage .cart h2{
+        font-size: 12px;
+    }
+    .mainPage .cart p{
+        font-size: 5px;
+    }
+    .container .mainPage{
+        margin-top: -80%;
+    }
+    .container .container1 form{
+        width: 100%;
+        height: 55vh;
+        top: 150%;
+        font-size: 10px;
+        place-items: center;
+        flex-direction: column;
+
+    }
+    .container1 form label{
+        font-size:15px;
+    }
+    .container1 form input{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .container1 button{
+        margin-top: 10px;
+    }
+    
+}
+@media only screen and (max-width:162px){
+    .container .main .main-Page p{
+        font-size: 3.5px;
+    }
+    .container .mainPage .cart .image img{
+        width: 50px;
+        height: 50px;
+    }
+    .mainPage .cart h2{
+        font-size: 5px;
+    }
+    .mainPage .cart p{
+        font-size: 2.5px;
+    }
+    .container .container1 form{
+        width: 100%;
+        height: 45vh;
+        top: 150%;
+        font-size: 10px;
+        place-items: center;
+        flex-direction: column;
+
+    }
+    .container1 form label{
+        font-size:15px;
+    }
+    .container1 form input{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .container1 button{
+        margin-top: 10px;
+    }
+    
+
+}
+@media only screen and (max-width:1280px){
+}
+.main{
+    width: 100%;
+    height: 30vh;
+    margin-top: 5px;
+}
+.main .main-Page{
+    width: 100%;
+    height: 30vh;
+}
+.main-Page p{
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+.mainPage{
+    gap: 12px;
+    max-width: 400px;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(157, 22, 137, 0.233);
+    display: flex;
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll ;
+    scroll-padding: 30px;
+    justify-content: space-between;
+}
+::-webkit-scrollbar{
+    height: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 20px;
+}
+.mainPage .cart{
+    height: 50vh;
+    display: flex;
+    flex: 0 0 100%;
+    background-color: brown;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+}
+.cart .image img{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(19, 15, 240);
+    padding: 4px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.cart h2{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cart p{
+    font-size: 10px;
+    font-weight: 300;
+}
+.container1 .myVdo{
+    margin-top: 10px;
+    min-width: 100%;
+}
+.container1 form{
+    width: 90%;
+    height: 35%;
+    border-radius: 15px;
+    padding: 24px;
+    background-color:rgba(8, 0, 255, 0.167);
+}
+label{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+input{
+    margin-top: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    height: 8vh;
+    width: 50%;
+    background: none;
+    color: darkorange;
+    padding: 15px;
+}
+::placeholder{
+    padding: 20px;
+    color: darkorange;
+}
+button{
+    margin-top: 25px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: deeppink;
+    color: #fff;
+    padding: 5px;
+}
